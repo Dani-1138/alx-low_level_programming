@@ -6,7 +6,7 @@
 /**
  * main - main block
  *
- * Return - Always 0 (succss)
+ * Return: Always 0 (succss)
  */
 
 int main(void)
@@ -22,7 +22,6 @@ int main(void)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is negative\n", n);
-	/* return anyway(0) */
 	return (0);
 
 }
