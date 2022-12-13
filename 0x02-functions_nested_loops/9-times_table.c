@@ -18,16 +18,16 @@ void times_table(void)
 
 			if ((mul / 10) == 0)
 			{
-				if (b != 0)
+				if (mul != 0)
 				{
 					_putchar('0');
 				}
-				if (b != 0)
+				if (mul != 0)
 				{
 					_putchar(' ');
-					_putchar((c % 10) + '0');
+					_putchar((prod % 10) + '0');
 				}
-				if (b < 9)
+				if (mul < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -35,9 +35,9 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((c / 10) + '0');
-				_putchar((c % 10) + '+');
-				if (b < 9)
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '+');
+				if (mul < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
