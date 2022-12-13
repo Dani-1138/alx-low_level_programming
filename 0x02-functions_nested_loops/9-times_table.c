@@ -11,23 +11,38 @@ void times_table(void)
 
 	for (num = 0; num <= 9; num++)
 	{
-		_putchar('0');
 		for (mul = 0; mul <= 9; mul++)
 		{
-			_putchar(',');
-			_putchar(' ');
 
 			prod = num * mul;
 
-			if (mul <= 9)
+			if ((mul / 10) == 0)
 			{
-				_putchar(' ');
+				if (b != 0)
+				{
+					_putchar('0');
+				}
+				if (b != 0)
+				{
+					_putchar(' ');
+					_putchar((c % 10) + '0');
+				}
+				if (b < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			else
-				_putchar((prod / 10) + '0');
-
-
-			_putchar((prod % 10) + '0');
+			{
+				_putchar((c / 10) + '0');
+				_putchar((c % 10) + '+');
+				if (b < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+			}
 		}
 		_putchar('\n');
 	}
