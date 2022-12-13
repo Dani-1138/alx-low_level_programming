@@ -25,14 +25,14 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(k + '0');
+				_putchar(prod + '0');
 			}
-			else if (k >= 10)
+			else if (prod >= 10)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
+				_putchar((prod / 10) + '0');
+				_putchar((prod % 10) + '0');
 			}
 		}
 		_putchar('\n');
