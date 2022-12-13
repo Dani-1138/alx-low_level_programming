@@ -5,9 +5,7 @@
  *
  * @n: number of the times table
  */
-
 void print_times_table(int n)
-
 {
 	int i, j, k;
 
@@ -21,7 +19,6 @@ void print_times_table(int n)
 				if (j == 0)
 				{
 					_putchar(k + '0');
-
 				}
 				else if (k < 10 && j != 0)
 				{
@@ -49,5 +46,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-
 }
