@@ -19,7 +19,7 @@ int main(void)
 		{
 			sum = sum + j;
 		}
-		next = k + k;
+		next = j + k;
 		j = k;
 		k = next;
 	}
