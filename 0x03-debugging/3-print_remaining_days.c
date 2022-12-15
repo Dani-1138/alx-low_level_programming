@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,7 +13,7 @@ void print_remaining_days(int month, int day, int year)
 {
 	if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
 	{
-		if (month >= 2 && day >= 60)
+		if (month > 2 && day >= 60)
 		{
 			day++;
 		}
@@ -22,6 +23,7 @@ void print_remaining_days(int month, int day, int year)
 	else
 	{
 		if (month == 2 && day == 60)
+			B
 		{
 			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
 		}
