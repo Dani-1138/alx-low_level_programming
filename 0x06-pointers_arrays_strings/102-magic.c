@@ -1,4 +1,10 @@
+#include "main.h"
 #include <stdio.h>
+
+/*
+ * main - code block
+ * Return: always 0 (success)
+ */
 
 int main(void)
 {
