@@ -72,16 +72,14 @@ int main(int argc, char *argv[])
 	do {
 		if (from == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO,
-					"Error: Can't read from file %s\n", arg[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg[1]);
 			free(buffer);
 			exit(98);
 		}
 		w = write(to, buffer, r);
 		if (to == -1 || w == -1)
 		{
-			dprintf(STDERR_FILENO,
-					"Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
